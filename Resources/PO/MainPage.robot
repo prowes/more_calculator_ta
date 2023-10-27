@@ -27,5 +27,3 @@ Enter the first digit
     Wait Until Element Is Visible  ${FIRST_DIGIT_VALUE}
     Click Element  ${FIRST_DIGIT_VALUE}
     Input Text  5  ${FIRST_DIGIT_VALUE}  # REPLACE
-
-
