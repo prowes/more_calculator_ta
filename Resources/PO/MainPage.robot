@@ -29,12 +29,12 @@ Elements Are Shown
 Enter the first digit
     Wait Until Element Is Visible  ${FIRST_DIGIT_VALUE}
     Click Element  ${FIRST_DIGIT_VALUE}
-    Input Text  5  ${FIRST_DIGIT_VALUE}
+    Input Text  ${FIRST_DIGIT_VALUE}  5
 
 Enter the second digit
     Wait Until Element Is Visible  ${SECOND_DIGIT_VALUE}
     Click Element  ${SECOND_DIGIT_VALUE}
-    Input Text  2  ${SECOND_DIGIT_VALUE}
+    Input Text  ${SECOND_DIGIT_VALUE}  2
 
 Choose Plus
     Wait Until Element Is Visible  ${PLUS}
