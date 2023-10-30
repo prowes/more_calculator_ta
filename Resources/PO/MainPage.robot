@@ -34,7 +34,7 @@ Enter the second digit
     Input Text  ${SECOND_DIGIT_VALUE}  2
 
 Choose Plus
-    Wait Until Element Is Visible  ${PLUS}
+    Wait Until Element Is Visible  ${ACTIONS}
     Select Radio Button  ${ACTIONS}  ${PLUS}
 
 Click Count
