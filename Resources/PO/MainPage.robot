@@ -15,7 +15,7 @@ ${RESULT} =  id=result
 
 
 *** Keywords ***
-Elements are shown
+Elements Are Shown
     Wait Until Element Is Visible  ${FIRST_DIGIT_VALUE}
     Wait Until Element Is Visible  ${SECOND_DIGIT_VALUE}
     Wait Until Element Is Visible  ${PLUS}

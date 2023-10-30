@@ -16,4 +16,4 @@ ${START_URL} =  http://16.16.201.200:8081  # UNHARDCODE!
 The adding operation is working
     log  Accessing to ${START_URL}
     Go To  ${START_URL}
-    Main_page.Elements are shown
+    Main_page.Elements Are Shown
