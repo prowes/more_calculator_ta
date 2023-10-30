@@ -5,10 +5,13 @@ Library  SeleniumLibrary
 *** Variables ***
 ${FIRST_DIGIT_VALUE} =  id=first_digit
 ${SECOND_DIGIT_VALUE} =  id=second_digit
+
+${ACTIONS} =  id=action
 ${PLUS} =  id=action-0
 ${MINUS} =  id=action-1
 ${MULTUPLY} =  id=action-2
 ${DIVIDE} =  id=action-3
+
 ${COUNT} =  id=submit
 
 ${RESULT} =  id=result
@@ -26,4 +29,17 @@ Elements Are Shown
 Enter the first digit
     Wait Until Element Is Visible  ${FIRST_DIGIT_VALUE}
     Click Element  ${FIRST_DIGIT_VALUE}
-    Input Text  5  ${FIRST_DIGIT_VALUE}  # REPLACE
+    Input Text  5  ${FIRST_DIGIT_VALUE}
+
+Enter the second digit
+    Wait Until Element Is Visible  ${SECOND_DIGIT_VALUE}
+    Click Element  ${SECOND_DIGIT_VALUE}
+    Input Text  2  ${SECOND_DIGIT_VALUE}
+
+Choose Plus
+    Wait Until Element Is Visible  ${PLUS}
+    Select Radio Button  ${ACTIONS}  ${PLUS}
+
+Click Count
+    Wait Until Element Is Visible  ${COUNT}
+    Click Button  ${COUNT}
