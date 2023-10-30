@@ -1,5 +1,5 @@
 *** Settings ***
-Resource  /var/lib/jenkins/workspace/MoreCalcTaRobot/Resources/PO/Main_page.robot
+Resource  /var/lib/jenkins/workspace/MoreCalcTaRobot/Resources/PO/MainPage.robot
 Resource  /var/lib/jenkins/workspace/MoreCalcTaRobot/Resources/Common.robot
 Test Setup  common.Begin Web Test
 Test Teardown  common.End Web Test
