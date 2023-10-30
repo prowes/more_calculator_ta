@@ -7,10 +7,7 @@ ${FIRST_DIGIT_VALUE} =  id=first_digit
 ${SECOND_DIGIT_VALUE} =  id=second_digit
 
 ${ACTIONS} =  id=action
-${PLUS} =  id=action-0
-${MINUS} =  id=action-1
-${MULTUPLY} =  id=action-2
-${DIVIDE} =  id=action-3
+${PLUS} =  +
 
 ${COUNT} =  id=submit
 
