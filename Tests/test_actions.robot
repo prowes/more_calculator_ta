@@ -8,6 +8,7 @@ Documentation  Open the Calculator app and do basic arithmetic operations
 
 *** Variables ***
 ${BROWSER} =  chrome
+${CHROME_OPTIONS} =  add_argument(“–headless”); add_argument(“no-sandbox”)
 ${START_URL} =  http://16.16.201.200:8081  # UNHARDCODE!
 
 
