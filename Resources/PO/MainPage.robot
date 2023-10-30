@@ -6,7 +6,7 @@ Library  SeleniumLibrary
 ${FIRST_DIGIT_VALUE} =  id=first_digit
 ${SECOND_DIGIT_VALUE} =  id=second_digit
 
-${ACTIONS} =  id=action
+${ACTIONS} =  action
 ${PLUS} =  +
 
 ${COUNT} =  id=submit
