@@ -4,7 +4,7 @@ Library  SeleniumLibrary
 
 *** Keywords ***
 Begin Web Test
-    Open Browser  about:blank  ${BROWSER}  options=add_argument(“no-sandbox”)
+    Open Browser  about:blank  ${headlesschrome}
     log  Accessing to ${START_URL}
     Go To  ${START_URL}
     Maximize Browser Window
