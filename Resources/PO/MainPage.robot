@@ -39,10 +39,11 @@ Choose Plus
 
 Click Count
     Wait Until Element Is Visible  ${COUNT}
+    Capture Page Screenshot
     Click Button  ${COUNT}
 
 Check Result
     Wait Until Element Is Visible  ${RESULT}
     ${SHOWN_RESULT} =  Get Text  ${RESULT}
     Capture Page Screenshot
-    Should Be Equal As Integers  5  ${SHOWN_RESULT}
+    Should Be Equal As Integers  7  ${SHOWN_RESULT}
