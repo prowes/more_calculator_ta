@@ -45,3 +45,4 @@ Check Result
     Wait Until Element Is Visible  ${RESULT}
     ${SHOWN_RESULT} =  Get Text  ${RESULT}
     Should Be Equal As Integers  5  ${SHOWN_RESULT}
+    Capture Page Screenshot
