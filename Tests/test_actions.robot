@@ -19,3 +19,4 @@ Adding operation
     MainPage.Enter the second digit
     MainPage.Choose Plus
     MainPage.Click Count
+    MainPage.Check Result
