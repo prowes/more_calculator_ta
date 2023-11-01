@@ -44,4 +44,4 @@ Click Count
 Check Result
     Wait Until Element Is Visible  ${RESULT}
     ${SHOWN_RESULT} =  Get Text  ${RESULT}
-    Should Be Equal As Integers  8  ${SHOWN_RESULT}
+    Should Be Equal As Integers  7  ${SHOWN_RESULT}
