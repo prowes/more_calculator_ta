@@ -9,8 +9,7 @@ Documentation  Open the Calculator app and do basic arithmetic operations
 
 *** Variables ***
 ${BROWSER} =  headlesschrome
-${IP} =  functions.get_ip
-${START_URL} =  http://${IP}:8081  # !UNHARDCODE!
+${START_URL} =  functions.get_ip
 
 
 *** Test Cases ***
