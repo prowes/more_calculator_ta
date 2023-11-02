@@ -1,6 +1,7 @@
 *** Settings ***
 Resource  /var/lib/jenkins/workspace/MoreCalcTaRobot/Resources/PO/MainPage.robot
 Resource  /var/lib/jenkins/workspace/MoreCalcTaRobot/Resources/Common.robot
+Library functions.py
 Test Setup  common.Begin Web Test
 Test Teardown  common.End Web Test
 Documentation  Open the Calculator app and do basic arithmetic operations
@@ -8,7 +9,8 @@ Documentation  Open the Calculator app and do basic arithmetic operations
 
 *** Variables ***
 ${BROWSER} =  headlesschrome
-${START_URL} =  http://51.20.141.158:8081  # !UNHARDCODE!
+${IP} =  functions.get_ip
+${START_URL} =  http://${IP}:8081  # !UNHARDCODE!
 
 
 *** Test Cases ***
