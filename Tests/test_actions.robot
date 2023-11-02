@@ -9,12 +9,12 @@ Documentation  Open the Calculator app and do basic arithmetic operations
 
 *** Variables ***
 ${BROWSER} =  headlesschrome
-${GOT_IP} =  functions.get_ip
 ${START_URL} =  http://51.20.141.158:8081
 
 
 *** Test Cases ***
 Adding operation
+    ${GOT_IP} =  functions.get_ip()
     log  ${GOT_IP}
     log  Accessing to ${START_URL}
     Go To  ${START_URL}
