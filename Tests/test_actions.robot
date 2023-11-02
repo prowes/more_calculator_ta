@@ -1,7 +1,7 @@
 *** Settings ***
 Resource  /var/lib/jenkins/workspace/MoreCalcTaRobot/Resources/PO/MainPage.robot
 Resource  /var/lib/jenkins/workspace/MoreCalcTaRobot/Resources/Common.robot
-Library functions.py
+Library  functions.py
 Test Setup  common.Begin Web Test
 Test Teardown  common.End Web Test
 Documentation  Open the Calculator app and do basic arithmetic operations
