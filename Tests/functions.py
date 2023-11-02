@@ -1,2 +1,6 @@
+import requests
+
 def get_ip():
-    return "http://51.20.141.158:8081"
+    r = requests.get('http://checkip.amazonaws.com')
+    public_url = r.text.strip()
+    return f"http://{public_url}:8081/"

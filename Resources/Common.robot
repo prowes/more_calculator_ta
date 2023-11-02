@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-
+Library  functions.py
 
 *** Keywords ***
 Begin Web Test
