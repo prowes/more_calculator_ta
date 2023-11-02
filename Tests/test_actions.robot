@@ -8,7 +8,7 @@ Documentation  Open the Calculator app and do basic arithmetic operations
 
 *** Variables ***
 ${BROWSER} =  headlesschrome
-${START_URL} =  http://51.20.144.250:8081  # !UNHARDCODE!
+${START_URL} =  http://51.20.141.158:8081  # !UNHARDCODE!
 
 
 *** Test Cases ***
