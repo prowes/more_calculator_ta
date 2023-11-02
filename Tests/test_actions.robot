@@ -15,7 +15,7 @@ ${START_URL} =  http://51.20.141.158:8081
 
 *** Test Cases ***
 Adding operation
-    log  functions.get_ip()
+    log  ${functions.get_ip()}
     log  Accessing to ${START_URL}
     Go To  ${START_URL}
     MainPage.Enter the first digit
