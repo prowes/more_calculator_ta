@@ -10,7 +10,7 @@ Documentation  Open the Calculator app and do basic arithmetic operations
 *** Variables ***
 ${BROWSER} =  headlesschrome
 #${START_URL} =  functions.get_ip()
-${START_URL} =  "http://51.20.141.158:8081"
+${START_URL} =  http://51.20.141.158:8081
 
 
 *** Test Cases ***
