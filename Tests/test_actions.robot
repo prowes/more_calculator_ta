@@ -33,9 +33,9 @@ Multiplication operation
     MainPage.Check Result  36
 
 Division operation
-    MainPage.Enter the first digit  1
-    MainPage.Enter the second digit  4
+    MainPage.Enter the first digit  60
+    MainPage.Enter the second digit  3
     MainPage.Choose Division
     MainPage.Click Count
-    MainPage.Check Result  0.25
+    MainPage.Check Result  22
 
