@@ -20,4 +20,4 @@ Adding operation
     MainPage.Enter the second digit  2
     MainPage.Choose Plus
     MainPage.Click Count
-    MainPage.Check Result  7
+    MainPage.Check Result  5+2
