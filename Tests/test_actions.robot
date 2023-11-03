@@ -21,7 +21,7 @@ Adding operation
 Subtraction operation
     MainPage.Enter the first digit  17
     MainPage.Enter the second digit  8
-    MainPage.Choose Plus
+    MainPage.Choose Minus
     MainPage.Click Count
     MainPage.Check Result  9
 

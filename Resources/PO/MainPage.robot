@@ -34,7 +34,7 @@ Choose Plus
 
 Choose Minus
     Wait Until Element Is Visible  ${ACTIONS}
-    Select Radio Button  ${ACTIONS}  ${PLUS}
+    Select Radio Button  ${ACTIONS}  ${MINUS}
 
 Click Count
     Wait Until Element Is Visible  ${COUNT_SELECTOR}
