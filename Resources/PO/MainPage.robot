@@ -9,7 +9,7 @@ ${ACTIONS} =  action
 ${PLUS} =  +
 ${MINUS} =  -
 ${MULTIPLY} =  *
-${DIVIDE} =  \
+${DIVIDE} =  \\
 
 ${COUNT_SELECTOR} =  id=submit
 
