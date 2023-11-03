@@ -4,7 +4,7 @@ Library  SeleniumLibrary
 
 *** Variables ***
 ${FIRST_DIGIT_SELECTOR} =  id=first_digit
-${SECOND_DIGIT_VALUE} =  id=second_digit
+${SECOND_DIGIT_SELECTOR} =  id=second_digit
 
 ${ACTIONS} =  action
 ${PLUS} =  +
@@ -17,7 +17,7 @@ ${RESULT} =  id=result
 *** Keywords ***
 Elements Are Shown
     Wait Until Element Is Visible  ${FIRST_DIGIT_SELECTOR}
-    Wait Until Element Is Visible  ${SECOND_DIGIT_VALUE}
+    Wait Until Element Is Visible  ${SECOND_DIGIT_SELECTOR}
     Wait Until Element Is Visible  ${PLUS}
     Wait Until Element Is Visible  ${MINUS}
     Wait Until Element Is Visible  ${MULTUPLY}
@@ -30,9 +30,10 @@ Enter the first digit
     Input Text  ${FIRST_DIGIT_SELECTOR}  ${FIRST_DIGIT_VALUE}
 
 Enter the second digit
-    Wait Until Element Is Visible  ${SECOND_DIGIT_VALUE}
-    Click Element  ${SECOND_DIGIT_VALUE}
-    Input Text  ${SECOND_DIGIT_VALUE}  2
+    [Arguments]    ${SECOND_DIGIT_VALUE}
+    Wait Until Element Is Visible  ${SECOND_DIGIT_SELECTOR}
+    Click Element  ${SECOND_DIGIT_SELECTOR}
+    Input Text  ${SECOND_DIGIT_SELECTOR}  ${SECOND_DIGIT_VALUE}
 
 Choose Plus
     Wait Until Element Is Visible  ${ACTIONS}

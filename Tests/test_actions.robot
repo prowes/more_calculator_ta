@@ -17,7 +17,7 @@ Adding operation
     log  Accessing to ${GOT_IP}
     Go To  ${GOT_IP}
     MainPage.Enter the first digit  5
-    MainPage.Enter the second digit
+    MainPage.Enter the second digit  2
     MainPage.Choose Plus
     MainPage.Click Count
     MainPage.Check Result
