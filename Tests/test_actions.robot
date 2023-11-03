@@ -37,5 +37,5 @@ Division operation
     MainPage.Enter the second digit  3
     MainPage.Choose Division
     MainPage.Click Count
-    MainPage.Check Result  22
+    MainPage.Check Result  20
 
