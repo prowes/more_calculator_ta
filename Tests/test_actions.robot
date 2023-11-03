@@ -14,9 +14,8 @@ ${BROWSER} =  headlesschrome
 *** Test Cases ***
 Adding operation
     ${GOT_IP} =  functions.Get Ip
-    log  ${GOT_IP}
     log  Accessing to ${GOT_IP}
-    Go To  ${GOT_IP}  # should it be there?
+    Go To  ${GOT_IP}
     MainPage.Enter the first digit
     MainPage.Enter the second digit
     MainPage.Choose Plus
