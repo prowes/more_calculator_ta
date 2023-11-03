@@ -5,10 +5,11 @@ Library  SeleniumLibrary
 *** Variables ***
 ${FIRST_DIGIT_SELECTOR} =  id=first_digit
 ${SECOND_DIGIT_SELECTOR} =  id=second_digit
-
 ${ACTIONS} =  action
 ${PLUS} =  +
 ${MINUS} =  -
+${MULTIPLY} =  *
+${DIVIDE} =  /
 
 ${COUNT_SELECTOR} =  id=submit
 
@@ -35,6 +36,14 @@ Choose Plus
 Choose Minus
     Wait Until Element Is Visible  ${ACTIONS}
     Select Radio Button  ${ACTIONS}  ${MINUS}
+
+Choose Multiply
+    Wait Until Element Is Visible  ${ACTIONS}
+    Select Radio Button  ${ACTIONS}  ${MULTIPLY}
+
+Choose Division
+    Wait Until Element Is Visible  ${ACTIONS}
+    Select Radio Button  ${ACTIONS}  ${DIVIDE}
 
 Click Count
     Wait Until Element Is Visible  ${COUNT_SELECTOR}

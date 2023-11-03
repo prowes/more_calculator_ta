@@ -25,3 +25,17 @@ Subtraction operation
     MainPage.Click Count
     MainPage.Check Result  9
 
+Multiplication operation
+    MainPage.Enter the first digit  4
+    MainPage.Enter the second digit  9
+    MainPage.Choose Multiply
+    MainPage.Click Count
+    MainPage.Check Result  36
+
+Division operation
+    MainPage.Enter the first digit  1
+    MainPage.Enter the second digit  4
+    MainPage.Choose Division
+    MainPage.Click Count
+    MainPage.Check Result  0.25
+
