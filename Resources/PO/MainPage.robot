@@ -9,20 +9,12 @@ ${SECOND_DIGIT_SELECTOR} =  id=second_digit
 ${ACTIONS} =  action
 ${PLUS} =  +
 
-${COUNT} =  id=submit
+${COUNT_SELECTOR} =  id=submit
 
-${RESULT} =  id=result
+${RESULT_SELECTOR} =  id=result
 
 
 *** Keywords ***
-Elements Are Shown
-    Wait Until Element Is Visible  ${FIRST_DIGIT_SELECTOR}
-    Wait Until Element Is Visible  ${SECOND_DIGIT_SELECTOR}
-    Wait Until Element Is Visible  ${PLUS}
-    Wait Until Element Is Visible  ${MINUS}
-    Wait Until Element Is Visible  ${MULTUPLY}
-    Wait Until Element Is Visible  ${DIVIDE}
-
 Enter the first digit
     [Arguments]    ${FIRST_DIGIT_VALUE}
     Wait Until Element Is Visible  ${FIRST_DIGIT_SELECTOR}
@@ -40,12 +32,13 @@ Choose Plus
     Select Radio Button  ${ACTIONS}  ${PLUS}
 
 Click Count
-    Wait Until Element Is Visible  ${COUNT}
+    Wait Until Element Is Visible  ${COUNT_SELECTOR}
     Capture Page Screenshot
-    Click Button  ${COUNT}
+    Click Button  ${COUNT_SELECTOR}
 
 Check Result
-    Wait Until Element Is Visible  ${RESULT}
-    ${SHOWN_RESULT} =  Get Text  ${RESULT}
+    [Arguments]    ${EXPECTED_RESULT}
+    Wait Until Element Is Visible  ${RESULT_SELECTOR}
+    ${SHOWN_RESULT} =  Get Text  ${RESULT_SELECTOR}
     Capture Page Screenshot
-    Should Be Equal As Integers  7  ${SHOWN_RESULT}
+    Should Be Equal As Integers  ${EXPECTED_RESULT}  ${SHOWN_RESULT}
