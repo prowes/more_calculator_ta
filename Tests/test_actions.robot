@@ -17,3 +17,11 @@ Adding operation
     MainPage.Choose Plus
     MainPage.Click Count
     MainPage.Check Result  7
+
+Subtraction operation
+    MainPage.Enter the first digit  17
+    MainPage.Enter the second digit  8
+    MainPage.Choose Plus
+    MainPage.Click Count
+    MainPage.Check Result  9
+

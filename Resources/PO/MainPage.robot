@@ -8,6 +8,7 @@ ${SECOND_DIGIT_SELECTOR} =  id=second_digit
 
 ${ACTIONS} =  action
 ${PLUS} =  +
+${MINUS} =  -
 
 ${COUNT_SELECTOR} =  id=submit
 
@@ -28,6 +29,10 @@ Enter the second digit
     Input Text  ${SECOND_DIGIT_SELECTOR}  ${SECOND_DIGIT_VALUE}
 
 Choose Plus
+    Wait Until Element Is Visible  ${ACTIONS}
+    Select Radio Button  ${ACTIONS}  ${PLUS}
+
+Choose Minus
     Wait Until Element Is Visible  ${ACTIONS}
     Select Radio Button  ${ACTIONS}  ${PLUS}
 
