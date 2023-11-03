@@ -16,7 +16,7 @@ Adding operation
     ${GOT_IP} =  functions.Get Ip
     log  Accessing to ${GOT_IP}
     Go To  ${GOT_IP}
-    MainPage.Enter the first digit
+    MainPage.Enter the first digit  5
     MainPage.Enter the second digit
     MainPage.Choose Plus
     MainPage.Click Count

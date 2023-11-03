@@ -3,7 +3,7 @@ Library  SeleniumLibrary
 
 
 *** Variables ***
-${FIRST_DIGIT_VALUE} =  id=first_digit
+${FIRST_DIGIT_SELECTOR} =  id=first_digit
 ${SECOND_DIGIT_VALUE} =  id=second_digit
 
 ${ACTIONS} =  action
@@ -16,7 +16,7 @@ ${RESULT} =  id=result
 
 *** Keywords ***
 Elements Are Shown
-    Wait Until Element Is Visible  ${FIRST_DIGIT_VALUE}
+    Wait Until Element Is Visible  ${FIRST_DIGIT_SELECTOR}
     Wait Until Element Is Visible  ${SECOND_DIGIT_VALUE}
     Wait Until Element Is Visible  ${PLUS}
     Wait Until Element Is Visible  ${MINUS}
@@ -24,9 +24,10 @@ Elements Are Shown
     Wait Until Element Is Visible  ${DIVIDE}
 
 Enter the first digit
-    Wait Until Element Is Visible  ${FIRST_DIGIT_VALUE}
-    Click Element  ${FIRST_DIGIT_VALUE}
-    Input Text  ${FIRST_DIGIT_VALUE}  5
+    [Arguments]    ${FIRST_DIGIT_VALUE}
+    Wait Until Element Is Visible  ${FIRST_DIGIT_SELECTOR}
+    Click Element  ${FIRST_DIGIT_SELECTOR}
+    Input Text  ${FIRST_DIGIT_SELECTOR}  ${FIRST_DIGIT_VALUE}
 
 Enter the second digit
     Wait Until Element Is Visible  ${SECOND_DIGIT_VALUE}
